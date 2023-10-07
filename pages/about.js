@@ -16,7 +16,15 @@ export function About() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <Headline page="about" number={"1111"} />
+          <Headline
+            page="about"
+            number={1111}
+            array={[1, 2, 3]}
+            obj={{ foo: "foo", bar: "bar" }}
+            boolean
+          >
+            code={<code className={styles.code}>pages/about.js</code>}
+            </Headline>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
