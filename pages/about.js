@@ -21,9 +21,8 @@ export function About() {
             number={1111}
             array={[1, 2, 3]}
             obj={{ foo: "foo", bar: "bar" }}
-            boolean
-          >
-            code={<code className={styles.code}>pages/about.js</code>}
+            boolean>
+            {<code className={styles.code}>pages/about.js</code>}
             </Headline>
           <div>
             <a
