@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css'
 import { Headline } from '@/components/Headline'
 const inter = Inter({ subsets: ['latin'] })
 
-export function Home() {
+export function About() {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ export function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <Headline page="about" />
+          <Headline page="about" number={"1111"} />
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -109,3 +109,5 @@ export function Home() {
     </>
   )
 }
+
+export default About;
